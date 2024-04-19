@@ -1,0 +1,61 @@
+<!-- Main Page (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EV Charge Payment</title>
+<style>
+  body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  .login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #4cae4c;
+  }
+  .forgot-password {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login to Your Account</h2>
+  <form action="login.html" method="post">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+  </form>
+</div>
+
+</body>
+</html>
